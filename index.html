@@ -11,10 +11,13 @@
       .card { background:var(--card); border:1px solid #252a34; border-radius:14px; padding:1.5rem; }
       h1 { margin:.2rem 0 .4rem; }
       p { color:var(--muted); margin-top:0; }
-      ul { list-style:none; padding:0; margin:1rem 0 0; display:grid; gap:.75rem; }
+      .links { list-style:none; padding:0; margin:1rem 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:0; }
+      .links li:not(:last-child)::after { content:"|"; margin:0 .65rem; color:var(--muted); font-weight:400; }
       a { color:var(--link); text-decoration:none; font-weight:600; }
       a:hover { text-decoration:underline; }
       .note { margin-top:1rem; color:var(--muted); font-size:.95rem; }
+      .bio p { color:var(--muted); margin:0 0 1rem; }
+      .bio p:last-child { margin-bottom:0; }
     </style>
   </head>
   <body>
@@ -22,12 +25,22 @@
       <section class="card">
         <h1>Jeremy Dunn</h1>
         <h2>Product Engineer / Software Designer</h2>
-        <p>I am a software architect and engineering leader with over 16 years of industry experience. I believe exceptional software comes from strong teamwork, clear communication, and thoughtful adoption of modern tools. I bring proven engineering judgment while helping teams evolve toward AI-native workflows that improve speed, quality, and consistency. I focus on finding the right balance between process, autonomy, and automation to maximize outcomes. I excel in dynamic, small-team environments with ambitious goals, and I am ready to contribute fresh ideas, deep expertise, and practical leadership that helps teams adopt AI effectively and run more smoothly.</p>
-        <ul>
+        <div class="bio">
+          <p>I’m a software architect and engineering leader with more than 16 years of experience building products, leading teams, and shipping in fast-moving environments. Across startups and growth-stage companies, I’ve learned that durable engineering success is never just about writing code — it’s about combining technical judgment, clear communication, and strong execution habits to help teams deliver meaningful outcomes consistently.</p>
+
+          <p>What I bring to modern teams is a blend of proven fundamentals and forward-looking practice. I care deeply about software design, maintainability, and quality, but I’m equally focused on how teams work. In today’s environment, AI tooling has fundamentally changed what high-performing engineering organizations can do. Teams that adapt thoughtfully can move faster, reduce friction, and raise quality at the same time. Teams that don’t risk optimizing for workflows that no longer match reality.</p>
+
+          <p>I help organizations bridge that gap. I’m not interested in AI adoption for hype; I’m interested in practical systems that improve throughput and decision quality. That means rethinking interview loops, code review focus, team responsibilities, and delivery processes so they align with modern capabilities. It means using AI to automate low-value repetition while investing human attention where it matters most: architecture, tradeoffs, user impact, and cross-functional clarity.</p>
+
+          <p>I’m especially effective in small, ambitious teams where ownership is high and constraints are real. I thrive in environments that value initiative, candor, and continuous improvement. I bring fresh ideas, but they’re grounded in execution experience — I know how to turn principles into habits, and habits into shipped results. I care about helping teams run smoother, collaborate better, and build products that are both technically strong and strategically aligned.</p>
+
+          <p>If your team is serious about adopting AI responsibly and rethinking engineering processes to stay competitive, I can help lead that transformation in a way that is practical, measurable, and aligned with your product goals.</p>
+        </div>
+        <ul class="links">
+          <li><a href="https://fractallian.github.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+          <li><a href="https://fractallian.github.io/blog/assets/JeremyDunn-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
           <li><a href="https://www.linkedin.com/in/jeremy-a-dunn/" target="_blank" rel="noreferrer">LinkedIn</a></li>
           <li><a href="https://github.com/fractallian" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><a href="https://fractallian.github.io/blog/assets/JeremyDunn-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
-          <li><a href="https://fractallian.github.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
         </ul>
       </section>
     </main>
